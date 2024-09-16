@@ -1,0 +1,114 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	background-color: none;
+}
+
+header {
+	padding: 2rem;
+	background-color: rgb(27, 161, 17);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 8px solid black;
+}
+
+.text-header {
+	letter-spacing: 2px;
+	font-size: 5rem;
+	text-transform: uppercase;
+}
+
+.elements-header {
+	display: flex;
+	align-items: center;
+	gap: 2rem;
+}
+
+.elements-header {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.main-elements {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.main-box-1,
+.main-box-2 {
+	margin: 10px;
+	flex: 1 1 300px;
+	box-sizing: border-box;
+}
+
+@media (max-width: 600px) {
+	.main-box-1,
+	.main-box-2 {
+		flex: 1 1 100%;
+	}
+
+	.elements-header img {
+		width: 60px;
+	}
+
+	.button-text img {
+		cursor: pointer;
+		width: 100%;
+	}
+	.text-header {
+		letter-spacing: 2px;
+		font-size: 3.5rem;
+		text-transform: uppercase;
+	}
+	.button-text > p {
+		font-size: 2rem;
+	}
+}
+
+.main-box-1 {
+	width: 60%;
+}
+
+.main-box-1 > p {
+	letter-spacing: 2px;
+	font-size: 3rem;
+	text-transform: uppercase;
+}
+
+.main-box-2 {
+	width: 40%;
+}
+.main-box-2 > img {
+	width: 100%;
+}
+
+.counter-display {
+	text-align: center;
+	padding-bottom: 2rem;
+}
+
+.button-text {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-direction: column;
+	letter-spacing: 2px;
+	gap: 2rem;
+	font-size: 3rem;
+	text-transform: uppercase;
+}
+
+.button-text img {
+	cursor: pointer;
+	width: 50%;
+}
+
+body {
+	background-color: white;
+	font-family: "Patrick Hand", sans-serif;
+}
